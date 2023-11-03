@@ -1,0 +1,25 @@
+cd C:\Users\mithb\OneDrive\Documents\NetBeansProjects\dbapp; "JAVA_HOME=C:\\Program Files\\Java\\jdk-20" cmd /c "\"C:\\NetBeans-19\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" \"-Dexec.executable=C:\\Program Files\\Java\\jdk-20\\bin\\java.exe\" -Dexec.mainClass=dpm.dbapp.Mydb -Dexec.classpathScope=runtime -Dexec.appArgs= -Dmaven.ext.class.path=C:\\NetBeans-19\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.1.0:exec"
+Scanning for projects...
+
+-----------------------------< dpm:dbapp >------------------------------
+Building dbapp 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.3.1:resources (default-resources) @ dbapp ---
+skip non existing resourceDirectory C:\Users\mithb\OneDrive\Documents\NetBeansProjects\dbapp\src\main\resources
+
+--- compiler:3.11.0:compile (default-compile) @ dbapp ---
+Nothing to compile - all classes are up to date
+
+--- exec:3.1.0:exec (default-cli) @ dbapp ---
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Connect
+INSERT INTO `patientdb`  VALUES ('1', 'Riya', '28-oct-2023', 'Cancer', '45', '1234567890')
+false
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  2.041 s
+Finished at: 2023-10-28T13:25:28+05:30
+------------------------------------------------------------------------
